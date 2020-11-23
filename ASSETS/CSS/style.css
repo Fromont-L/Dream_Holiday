@@ -1,34 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
 
 @font-face {
-  font-family: '';
-  src: url('');
+font-family: 'Noteworthy Light';
+src: url('../FONT/Noteworthy-Lt.woff');
 }
 
-@font-face {
-  font-family: '';
-  src: url('');
+@font-face{
+font-family: "";
+src: url("");
 }
 
-@font-face {
-  font-family: '';
-  src: url('');
+@font-face{
+font-family: "";
+src: url("");
 }
 
-@font-face {
-  font-family: '';
-  src: url('');
-}
-/*-----------------------------------------NAVIGATION---------------------------------------------*/
-header {
-  background: grey;
+@font-face{
+font-family: "";
+src: url("");
 }
 
-nav {
-  background: pink;
+/*--------------------------------------------BODY---------------------------------------------*/
+
+*
+{
+  margin: 0;
 }
 
-/*-----------------------------------------DIAPO---------------------------------------------*/
+/*-----------------------------------------HEADER---------------------------------------------*/
+
+header /*Bannière contenant le logo et la nav*/
+{
+  background-color: #47E196;
+  color: white;
+  display: flex;
+  justify-content: space-between; /*Place le logo à gauche et la navigation à droite*/
+  align-items: center;
+  padding: 5px;
+}
+
+/*----------LOGO ET ICON-----------*/
+
+#logocontainer .title /*Aligne le logo et l'intitulé*/
+{
+  display: inline-block;
+}
+
+.dream /*Aligne verticalement*/
+{
+  font-size: 3em;
+  font-family: 'Noteworthy Light';
+  letter-spacing: 2px;
+  position: relative;
+  top: -17px;
+}
+
+.logo /*Réduit la taille initiale du logo*/
+{
+  width: 90px;
+  cursor: pointer; 
+}
+
+.icon /*Positionne et commande la taille des icons*/
+{
+  width: 24px;
+  position: relative;
+  top: 4px;
+  
+}
+
+/*------------NAVIGATION------------*/
+
+nav ul /**/
+{
+  list-style: none;
+}
+
+nav ul li /*Aligne les block*/
+{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav li a /*Personnalise le texte dans les block*/
+{
+  text-decoration: none;
+  font-family: 'Noteworthy Light';
+  color: white; 
+  font-size: 23px;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/
+{
+  border: solid;  
+  border-width: thin;
+  border-color: white;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+}
+
+.burger
+{
+  display: none;
+}
+
+.burger div
+{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/*-------------------------------------------/HEADER-----------------------------------------------------*/
+/*--------------------------------------------DIAPO------------------------------------------------------*/
 
 /* STYLE General Des flex marge ETC .. */
 main {
@@ -179,3 +266,5 @@ main {
     font-size: 1.4em;
   }
 }
+
+/*---------------------------------------/DIAPO-----------------------------------------*/
