@@ -22,21 +22,9 @@ src: url("");
 
 /*--------------------------------------------BODY---------------------------------------------*/
 
-*
+body
 {
   margin: 0;
-}
-
-/*-----------------------------------------HEADER---------------------------------------------*/
-
-header /*Bannière contenant le logo et la nav*/
-{
-  background-color: #47E196;
-  color: white;
-  display: flex;
-  justify-content: space-between; /*Place le logo à gauche et la navigation à droite*/
-  align-items: center;
-  padding: 5px;
 }
 
 /*----------LOGO ET ICON-----------*/
@@ -69,7 +57,19 @@ header /*Bannière contenant le logo et la nav*/
   
 }
 
-/*------------NAVIGATION------------*/
+/*---------------------------------------NAVIGATION----------------------------------------*/
+
+nav
+{
+  background-color: #47E196;
+  color: white;
+  display: flex;
+  justify-content: space-between; /*Place le logo à gauche et la navigation à droite*/
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
 
 nav ul /**/
 {
@@ -101,20 +101,92 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/
   color: white;
 }
 
+/*------------MENU-BURGER------------*/
+
 .burger
 {
   display: none;
+  cursor: pointer;
 }
 
 .burger div
 {
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 5px;
   background-color: white;
-  margin: 5px;
+  margin: 8px;
 }
 
-/*-------------------------------------------/HEADER-----------------------------------------------------*/
+/*-----------NAV REPONSIVE----------*/
+
+
+@media screen and (max-width: 1024px)
+{
+  .items
+  {
+    width: 60%; 
+  }
+}
+
+@media screen and (max-width: 1070px)
+{
+  body
+  {
+    overflow-x: hidden;
+  }
+  .items
+  {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 13vh;
+    background-color: #47E196;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+
+  }
+
+  .burger
+  {
+    display: block;
+  }
+
+  .dream
+  {
+    font-size: 2em;
+    top: -25px;
+  }
+
+}
+
+
+.nav-active
+{
+  transform: translate(0%);
+}
+
+@keyframes navLinkFade
+{
+  from
+  {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to
+  {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*------------------------------------------/NAVIGATION--------------------------------------------------*/
+
 /*--------------------------------------------DIAPO------------------------------------------------------*/
 
 /* STYLE General Des flex marge ETC .. */

@@ -1,3 +1,26 @@
+//----------------------------------------------NAVIGATION------------------------------------------------------
+
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.items');
+  const navLinks = document.querySelectorAll('.items li');
+  //toggle nav
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+  });
+  //animate links
+  navLinks.forEach((link, index) => {
+    link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 0.3s}s' ;
+    console.log(index / 7);
+
+  });
+}
+
+navSlide();
+
+
+//----------------------------------------------DIAPORAMA-------------------------------------------------------
 // Variables globales
 let compteur = 0; // Compteur qui permettra de savoir sur quelle slide nous sommes
 let timer, elements, slides, slideWidth, mod;
