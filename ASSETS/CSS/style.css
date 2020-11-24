@@ -81,7 +81,6 @@ nav
   display: flex;
   justify-content: space-between; /*Place le logo à gauche et la navigation à droite*/
   align-items: center;
-  padding: 5px;
   width: 100%;
   position: sticky;
 
@@ -535,6 +534,12 @@ p.text {
     .button::before {
         font-size: 5px;
     }
+
+    .destination-title {
+      font-size: 2em;
+    }
+
+
 }
 
 /*---------------------------------------/DIAPO-----------------------------------------*/
