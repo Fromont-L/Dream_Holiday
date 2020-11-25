@@ -538,8 +538,80 @@ p.text {
     .destination-title {
       font-size: 2em;
     }
-
-
 }
 
-/*---------------------------------------/DIAPO-----------------------------------------*/
+
+footer{
+	background-color:#424242;
+	max-width:100%; 
+	height:280px;
+	padding-top:10px;
+	bottom:0;
+  color:#FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content : space-around
+}
+
+
+/*Titre Principal*/
+
+
+.principal{ padding-top: 20px;
+	  font-family: 'Xanh Mono', monospace;
+  	color:#FFFFFF;
+  	font-size:40px;
+    text-align:center;
+    position: relative;
+}
+
+.principal::before {
+  content: "";
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  width: 15%;
+  height: 2px;
+  bottom: -5px;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+hr{
+ 	width:150px;
+	margin-bottom: 60px;
+}
+
+/*Eléments*/
+
+p.footer{  font-family: georgia;
+	padding-top:30px;
+	padding-left:20px;
+	font-size:15px;
+	color:#FFFFFF;
+}
+
+
+
+
+/*Liens*/
+
+.nav{
+	font-size: 20px;
+	color:#FFFFFF;
+	display:flex;
+	justify-content:space-around;
+	text-align:center;
+	
+}
+
+
+a{
+	color:#FFFFFF;
+}
+
+
