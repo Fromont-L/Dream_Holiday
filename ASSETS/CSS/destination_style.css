@@ -362,7 +362,7 @@ main {
 
 .size 
 {
-  width: 250px;
+  width: 90%;
 }
 
 /* Formulaire */
@@ -398,6 +398,14 @@ main {
 {
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1400px)
+{
+  #container
+  {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1024px)
