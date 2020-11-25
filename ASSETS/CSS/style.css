@@ -532,6 +532,59 @@ p.text {
 }
 
 
+/*Contact*/
+
+@font-face{
+  font-family: "Xanh Mono";
+  src: url("XanhMono-Regular.ttf");
+}
+
+
+.contacter{
+  box-shadow: 0px 0px 13px 2px;
+  border: 2px solid black;
+  padding-bottom:20px;
+  text-align:center;
+  width:380px;
+  height:330px;
+}
+
+
+.n{
+  font-family:Times New Roman;
+  font-size:28px;
+}
+
+
+.d{
+  font-family:Xanh Mono;
+  font-size:28px;
+}
+
+
+.p{ 
+  font-family:georgia;
+  line-height:25px;
+  font-size:17px;
+}
+
+.icons{
+  display: flex;
+  flex-direction:center;
+  align-items: center;
+  justify-content:space-around;
+
+}
+
+
+a{
+  font-family:georgia;
+  color:#000000;
+}
+
+/*Fin Contact*/
+
+
 /*--------------------------------------------------FOOTER-----------------------------------------------*/
 
 
