@@ -250,7 +250,7 @@ main {
   /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
-.diapo-titre {
+.diapo_titre {
   letter-spacing: 7px;
   font-family: 'Xanh Mono', monospace;
   font-weight: 900;
@@ -321,20 +321,23 @@ main {
 /*---------------------------------------/DIAPO-----------------------------------------*/
 /*-------------------------------------DESCRIPTION--------------------------------------*/
 
-#container {
+#container 
+{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.description_title {
+.description_title 
+{
   font-size: 4em;
   text-align: justify;
   margin-top: 1em;
   position: relative;
 }
 
-.description_title::before {
+.description_title::before 
+{
   content: '';
   position: absolute;
   background-color: #add981;
@@ -343,55 +346,90 @@ main {
   bottom: -2px;
 }
 
-.description {
+.description 
+{
   font-size: 18px;
   width: 55%;
 }
 
-.img {
+.img 
+{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 5%;
 }
 
-.size {
-  width: 20vw;
-  height: 30vh;
+.size 
+{
+  width: 250px;
 }
 
 /* Formulaire */
-.flexi {
+.formulaire 
+{
   display: flex;
   flex-flow: column;
-  margin: auto;
-  width: 30%;
+  font-size: 18px;
+  width: 20%;
 }
-.depart > input {
+
+.depart > input 
+{
   display: flex;
   flex-direction: column;
 }
 
-#price {
+#price 
+{
   border: #47e196 solid 2px;
   height: 30px;
   margin-top: 15%;
   text-align: center;
 }
 
-.formulaire {
-  font-size: 18px;
-  width: 40%;
-}
-.bor {
+.bor
+ {
   /* border: #000000 3px solid; */
   width: 30%;
 }
-#rut {
+
+#rut 
+{
   display: flex;
   justify-content: space-around;
 }
 
+@media screen and (max-width: 1024px)
+{
+    #container
+  {
+    display: block;
+    margin: 2%;
+    width: 100%;
+
+  }
+
+    .description
+  {
+    width: 100%;
+  }
+
+  .img
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .size
+  {
+    padding-top: 7%;
+    width: 100%;
+  }
+
+}
 /*--------------------------------------------------FOOTER-----------------------------------------------*/
 
 footer {
