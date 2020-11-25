@@ -51,7 +51,7 @@ window.onload = () => {
   prev.addEventListener('click', slidePrev);
 
   // Automatiser le diaporama
-  timer = setInterval(slideNext, 5000);
+  timer = setInterval(slideNext, 6000);
 
   // Gérer le survol de la souris
   diapo.addEventListener('mouseover', stopTimer);
@@ -125,7 +125,7 @@ function stopTimer() {
  * On redémarre le défilement
  */
 function startTimer() {
-  timer = setInterval(slideNext, 5000);
+  timer = setInterval(slideNext, 6000);
 }
 
 //------------------------------------------- FORMULAIRE ---------------------------------------------

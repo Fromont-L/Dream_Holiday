@@ -11,14 +11,13 @@ const navSlide = () => {
   });
   //animate links
   navLinks.forEach((link, index) => {
-    link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 0.3s}s' ;
+    link.style.animation =
+      'navLinkFade 0.5s ease forwards ${index / 7 + 0.3s}s';
     console.log(index / 7);
-
   });
-}
+};
 
 navSlide();
-
 
 //----------------------------------------------DIAPORAMA-------------------------------------------------------
 // Variables globales
@@ -47,7 +46,7 @@ window.onload = () => {
   prev.addEventListener('click', slidePrev);
 
   // Automatiser le diaporama
-  timer = setInterval(slideNext, 4000);
+  timer = setInterval(slideNext, 6000);
 
   // Gérer le survol de la souris
   diapo.addEventListener('mouseover', stopTimer);
@@ -121,5 +120,5 @@ function stopTimer() {
  * On redémarre le défilement
  */
 function startTimer() {
-  timer = setInterval(slideNext, 4000);
+  timer = setInterval(slideNext, 6000);
 }
