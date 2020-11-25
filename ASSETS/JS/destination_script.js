@@ -4,27 +4,25 @@ const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.items');
   const navLinks = document.querySelectorAll('.items li');
- 
 
   burger.addEventListener('click', () => {
-  	 //toggle nav
+    //toggle nav
     nav.classList.toggle('nav-active');
 
-     //animate links
-  navLinks.forEach((link, index) => {
-  	if (link.style.animation){
-  		link.style.animation = ''
-  	} else {
-  		link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
-  	}
-
+    //animate links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 1.5
+        }s`;
+      }
+    });
   });
-  });
-
-}
+};
 
 navSlide();
-
 
 //----------------------------------------------DIAPORAMA-------------------------------------------------------
 // Variables globales
@@ -128,4 +126,21 @@ function stopTimer() {
  */
 function startTimer() {
   timer = setInterval(slideNext, 5000);
+}
+
+//------------------------------------------- FORMULAIRE ---------------------------------------------
+var some = 400;
+function myFunction() {
+  var price = document.forms[0];
+  var txt = '';
+  var i;
+  for (i = 0; i < price.length; i++) {
+    if (price[i].checked) {
+      txt = txt + price[i].value + ' | ';
+    }
+  }
+  document.getElementById('order').innerText =
+    'Vous avez sélectionnez un vol: ' + txt;
+
+  document.getElementById('price').innerHTML = 'Prix: <strong></strong>' + some;
 }
