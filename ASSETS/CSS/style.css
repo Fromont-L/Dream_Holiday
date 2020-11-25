@@ -31,17 +31,8 @@ html {
   margin: 0;
 }
 
-/*-----------------------------------------HEADER---------------------------------------------*/
+/*---------------------------------------NAVIGATION----------------------------------------*/
 
-header /*Bannière contenant le logo et la nav*/
-{
-  background-color: #47E196;
-  color: white;
-  display: flex;
-  justify-content: space-between; /*Place le logo à gauche et la navigation à droite*/
-  align-items: center;
-  padding: 5px;
-}
 /*----------LOGO ET ICON-----------*/
 
 #logocontainer .title /*Aligne le logo et l'intitulé*/
@@ -72,7 +63,7 @@ header /*Bannière contenant le logo et la nav*/
   
 }
 
-/*---------------------------------------NAVIGATION----------------------------------------*/
+/*--------------NAVITATION----------------*/
 
 nav
 {
@@ -541,6 +532,9 @@ p.text {
 }
 
 
+/*--------------------------------------------------FOOTER-----------------------------------------------*/
+
+
 footer{
 	background-color:#424242;
 	max-width:100%; 
@@ -577,10 +571,6 @@ footer{
 }
 
 
-
-
-
-
 hr{
  	width:150px;
 	margin-bottom: 60px;
@@ -595,9 +585,6 @@ p.footer{  font-family: georgia;
 	color:#FFFFFF;
 }
 
-
-
-
 /*Liens*/
 
 .nav{
@@ -608,7 +595,6 @@ p.footer{  font-family: georgia;
 	text-align:center;
 	
 }
-
 
 a{
 	color:#FFFFFF;
