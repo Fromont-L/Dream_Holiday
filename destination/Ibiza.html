@@ -183,82 +183,142 @@
             <img class="size" src="../ASSETS/IMAGES/Ibiza/desti3.jpg" />
           </div>
         </div>
+        <!-- -------------------------------------------------------------------MAP--------------------------------------------------------------->
+
+        <div class="container_center">
+          <div class="center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24837.82681813345!2d1.4121382725934795!3d38.90732689240095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129946bc6d9d1985%3A0xb6ca1af29357fa88!2s07800%20Ibiza%2C%20Bal%C3%A9ares%2C%20Espagne!5e0!3m2!1sfr!2sfr!4v1606401805597!5m2!1sfr!2sfr"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
       </div>
 
-      <!--------FORMULAIRE-------------->
+      <!-------------------------------------------------------------------FORMULAIRE------------------------------------------------------------->
 
       <div class="formulaire">
-        <div class="description_title">Formulaire</div>
+        <div class="description_title">Séjour</div>
+
         <form method="post" action="">
           <fieldset class="flexi">
             <fieldset class="depart">
-              <legend>Depart</legend>
+              <!------------------------------------DEPART-------------------------------------->
+
+              <label for="depart">Depart</label>
 
               <select name="pays" id="paysSelect">
-                <option value="">--Please choose your airport</option>
+                <option value="">--Choisissez votre aéroport</option>
+
                 <option value="pays1">
                   Aéroport Paris Charles de Gaulle (France)
                 </option>
+
                 <option value="pays2">
                   L'aéroport de Francfort-sur-le-Main (Alemagne)
                 </option>
+
                 <option value="pays3">
                   Aéroport de Rome Fiumicino, Latium (Italie)
                 </option>
+
                 <option value="pays4">
                   Aéroport Adolfo-Suárez de Madrid-Barajas (Espagne)
                 </option>
+
                 <option value="pays5">
                   Aéroport International de Dubaï (Émirat Arabes Unis)
                 </option>
+
                 <option value="pays6">
                   Aéroport International de Los Angeles (États-Unis)
                 </option>
+
                 <option value="pays7">L'aéroport d’Istanbul (Turquie)</option>
+
                 <option value="pays8">
                   Aéroport International de Pékin-Capitale (Chine)
                 </option>
+
                 <option value="pays9">
                   Aéroport International de Londres-Heathrow (Royaume-Uni)
                 </option>
               </select>
-              <p><br /></p>
 
-              <label for="nom">Nom:</label>
-              <input type="text" name="nom" id="" placeholder="Conor" />
+              <!------------------------------------DONNÉES-------------------------------------->
 
-              <label for="prenom">Prenom:</label>
-              <input type="text" name="prenom" id="" placeholder="John" />
+              <div class="donnees">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="" placeholder="Conor" />
+              </div>
 
-              <label for="mail">Email:</label>
-              <input
-                type="email"
-                name="mail"
-                id=""
-                placeholder="exemplemail@gmail.com"
-              />
+              <div class="donnees">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="" placeholder="John" />
+              </div>
 
-              <label for="passager">Passager(s)</label>
-              <input
-                type="number"
-                name="passager"
-                id=""
-                placeholder="max 8"
-                max="8"
-              />
+              <div class="donnees">
+                <label for="mail">E-mail</label>
+                <input
+                  type="email"
+                  name="mail"
+                  id=""
+                  placeholder="exemplemail@gmail.com"
+                />
+              </div>
+
+              <div class="donnees">
+                <label for="passager">Passager(s)</label>
+                <input
+                  type="number"
+                  name="passager"
+                  id=""
+                  placeholder="max 8"
+                  min="0"
+                  max="8"
+                />
+              </div>
+
+              <!------------------------------------LIGNE--------------------------------------->
+
+              <div class="ligne_formulaire"></div>
+
+              <!------------------------------------ DATE --------------------------------------------------- -->
+              <fieldset class="date">
+                <legend>Sélectionnez une date</legend>
+
+                <label for="depart_date">Allée</label>
+                <input type="date" name="departdate" />
+
+                <label for="retour_date">Retour</label>
+                <input type="date" name="retour" />
+              </fieldset>
+
+              <!------------------------------------LIGNE--------------------------------------->
+
+              <div class="ligne_formulaire"></div>
+
+              <!------------------------------------SIÈGES-------------------------------------->
 
               <fieldset class="seat">
-                <legend>Selectionez un siege</legend>
-
+                <legend>Sélectionnez un siège</legend>
                 <div id="rut">
-                  <div class="bor">
-                    Hublot ?
+                  <!-----------------HUBLOT------------------->
 
+                  <div class="bor">
+                    <label>Hublot</label>
                     <div>
                       <input
                         type="radio"
                         id="rd1"
-                        value=" Avec Hublot "
+                        class="radio1"
+                        value=" avec hublot, "
                         name="seat"
                         checked=""
                       />
@@ -269,22 +329,25 @@
                       <input
                         type="radio"
                         id="rd2"
-                        value=" Sans Hublot "
+                        class="radio1"
+                        value=" sans hublot, "
                         name="seat"
                       />
                       <label for="rd2">Non</label>
                     </div>
                   </div>
 
-                  <div class="bor">
-                    Class ?
+                  <!-----------------CLASSE------------------->
 
+                  <div class="bor">
+                    <label>Classe</label>
                     <div>
                       <input
                         type="radio"
                         id="rd3"
+                        class="radio2"
                         name="class"
-                        value=" Premierre Classe "
+                        value=" en première classe, "
                       />
                       <label for="rd3">Première classe</label>
                     </div>
@@ -293,22 +356,25 @@
                       <input
                         type="radio"
                         id="rd4"
+                        class="radio2"
                         name="class"
-                        value=" Class Economique "
+                        value=" en classe économique, "
                         checked
                       />
                       <label for="rd4">Classe Économique</label>
                     </div>
                   </div>
 
-                  <div class="bor">
-                    Repas ?
+                  <!-----------------REPAS------------------->
 
+                  <div class="bor">
+                    <label>Repas</label>
                     <div>
                       <input
                         type="radio"
                         id="rd5"
-                        value=" Avec Repas "
+                        class="radio3"
+                        value=" avec repas. "
                         name="repas"
                         checked=""
                       />
@@ -319,7 +385,8 @@
                       <input
                         type="radio"
                         id="rd6"
-                        value=" Sans Repas "
+                        class="radio3"
+                        value=" sans repas. "
                         name="repas"
                       />
                       <label for="rd6">Sans Repas</label>
@@ -327,46 +394,35 @@
                   </div>
                 </div>
 
-                <input
-                  type="button"
-                  onclick="myFunction()"
-                  value="Valider les options"
-                />
-
-                <!-- STOP -->
+                <input type="button" onclick="myFunction()" value="Valider" />
               </fieldset>
+              <!--fin seat-->
             </fieldset>
+            <!--fin arrivée-->
 
-            <fieldset class="arriver">
+            <!------------------------------------LIGNE--------------------------------------->
+
+            <div class="ligne_formulaire"></div>
+
+            <!------------------------------------TARIF-------------------------------------->
+
+            <fieldset class="arrivée">
               <legend>Tarif</legend>
-
               <p id="order"></p>
-
-              <div id="price">250 €</div>
+              <input type="button" id="price" value="150 €" />
             </fieldset>
           </fieldset>
+          <!--fin formulaire flexi-->
         </form>
       </div>
+      <!--fin formulaire-->
     </div>
+    <!--fin description-->
+
+    <!------------------------------------------------------------------- /FORMULAIRE---------------------------------------------------------->
 
     <!--------------------------------------------------------------------/DESCRIPTION--------------------------------------------------------->
 
-    <!-- ----------------------------------------------------MAP ---------------------------------------->
-
-    <div class="container_center">
-      <div class="center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24837.826818133482!2d1.4121382725934795!3d38.90732689240095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129946bc6d9d1985%3A0xb6ca1af29357fa88!2s07800%20Ibiza%2C%20Bal%C3%A9ares%2C%20Espagne!5e0!3m2!1sfr!2sfr!4v1606317329073!5m2!1sfr!2sfr"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-      </div>
-    </div>
     <!---------------------------------------------------------------------FOOTER-------------------------------------------------------------->
 
     <footer>
@@ -379,5 +435,5 @@
       <p class="footer">Copyright:TikiTakos2020</p>
     </footer>
   </body>
-  <script src="../ASSETS/JS/destination_script.js"></script>
+  <script src="ASSETS/JS/destination_script.js"></script>
 </html>
