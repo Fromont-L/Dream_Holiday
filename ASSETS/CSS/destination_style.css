@@ -366,6 +366,20 @@ main {
   width: 90%;
 }
 
+.cancun-information {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cancun-information-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  list-style: none;
+  font-size: 2em;
+  font-weight: 100;
+
+}
+
 /* ---------------------------------------MAP----------------------------------------*/
 
 
