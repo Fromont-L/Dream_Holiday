@@ -129,7 +129,6 @@ function startTimer() {
 }
 
 //------------------------------------------- FORMULAIRE ---------------------------------------------
-var some = 400;
 function myFunction() {
   var price = document.forms[0];
   var txt = '';
