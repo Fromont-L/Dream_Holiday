@@ -222,6 +222,7 @@
         <form method="post" action="">
           <fieldset class="flexi">
             <fieldset class="depart">
+
               <!------------------------------------DEPART-------------------------------------->
 
               <label for="depart">Depart</label>
@@ -303,16 +304,20 @@
               <div class="ligne_formulaire"></div>
 
               <!------------------------------------ DATE --------------------------------------------------- -->
-              <fieldset>
+              <fieldset class="date">
                 <legend>Sélectionnez une date</legend>
 
-                <label for="departdate"> Aller ! </label>
+                <label for="depart_date">Allée</label>
                 <input type="date" name="departdate" />
 
-                <label for="retour"> Retour ! </label>
+                <label for="retour_date">Retour</label>
                 <input type="date" name="retour" />
               </fieldset>
 
+              <!------------------------------------LIGNE--------------------------------------->
+
+              <div class="ligne_formulaire"></div>
+              
               <!------------------------------------SIÈGES-------------------------------------->
 
               <fieldset class="seat">
@@ -418,7 +423,7 @@
             <fieldset class="arrivée">
               <legend>Tarif</legend>
               <p id="order"></p>
-              <div id="price">1450 €</div>
+              <input type="button" id="price" value="1450 €" />
             </fieldset>
           </fieldset>
           <!--fin formulaire flexi-->

@@ -366,20 +366,6 @@ main {
   width: 90%;
 }
 
-.cancun-information {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.cancun-information-title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  list-style: none;
-  font-size: 2em;
-  font-weight: 100;
-
-}
-
 /* ---------------------------------------MAP----------------------------------------*/
 
 
@@ -515,6 +501,43 @@ input::placeholder
 {
   font-size: 18px;
 }
+
+/*---------------------------------DATES----------------------------------*/
+
+.date > legend
+{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold; 
+}
+
+input[type="date"]
+{
+   outline: none;
+   font-size: 18px;
+   color: grey;
+   padding: .3em;
+   margin: 0.5em 0.8em;
+   width: 90%;
+   border: solid;
+   border-color: grey;
+   border-width: thin;
+   -webkit-appearance: none;
+   display: block;
+   background: #fff;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -o-border-radius: 2px;
+   -ms-border-radius: 2px;
+   border-radius: 2px;
+}
+
+label[for="depart_date"], label[for="retour_date"]
+{
+  margin-left: 14px;
+}
+
+
 /*---------------------------------SIÈGES----------------------------------*/
 
 #rut 
@@ -715,22 +738,27 @@ input[type="button"]
   text-align: center;
 }
 
-#price 
+
+button[id="price"]
 {
   text-align: center;
   font-size: 1em;
-   color: black;
+   color: white;
+   background: #f45802;
    border: 3px solid #f45802;
    outline: none;
    margin: 10% 25% 6%;
   padding: .6em 1em;
+  cursor: pointer;
    -webkit-appearance: none;
    -webkit-border-radius: 2px;
    -moz-border-radius: 2px;
    -ms-border-radius: 2px;
    -o-border-radius: 2px;
    border-radius: 2px;  
-}
+} 
+
+
 
 /*----------------------------------LIGNE--------------------------------------*/
 
