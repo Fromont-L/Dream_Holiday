@@ -366,6 +366,40 @@ main {
   width: 90%;
 }
 
+/* ---------------------------------------MAP----------------------------------------*/
+
+
+.container_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
 /*--------------------------------FORMULAIRE----------------------------------*/
 
 fieldset 
@@ -381,13 +415,6 @@ fieldset
   border-top-color: #f45802;
   border-top-width: 6px;
 }
-
-label + legend
-{
-  font-family: Xanh Mono;
-}
-
-
 
 .formulaire 
 {
@@ -657,11 +684,10 @@ input[type="button"]
    background: #f45802;
    border: 1px solid #f45802;
    outline: none;
-   margin: 10% 28% 6%;
+   margin: 10% 25% 6%;
    cursor: pointer;
    padding: .6em 1em;
    -webkit-appearance: none;
-   width: 50%;
    -webkit-border-radius: 2px;
    -moz-border-radius: 2px;
    -ms-border-radius: 2px;
@@ -682,10 +708,9 @@ input[type="button"]
    color: black;
    border: 3px solid #f45802;
    outline: none;
-   margin: 50px 80px;
-   padding: .6em 1em;
+   margin: 10% 25% 6%;
+  padding: .6em 1em;
    -webkit-appearance: none;
-   width: 50%;
    -webkit-border-radius: 2px;
    -moz-border-radius: 2px;
    -ms-border-radius: 2px;
@@ -703,7 +728,7 @@ input[type="button"]
 }
 
 
-/*--------------------------------/Formulaire----------------------------------*/
+/*--------------------------------/FORMULAIRE----------------------------------*/
 
 @media screen and (max-width: 1400px)
 {
@@ -715,6 +740,9 @@ input[type="button"]
 
 @media screen and (max-width: 1024px)
 {
+
+  /*DESCRIPTION*/
+
     #container
   {
     display: block;
@@ -741,6 +769,32 @@ input[type="button"]
     padding-top: 7%;
     width: 100%;
   }
+
+  /*FORMULAIRE*/
+
+fieldset 
+{
+  border: none;
+  margin-top: 7%;
+}
+
+.flexi
+{
+  background-color: white;
+  border-top: solid;
+  border-top-color: #f45802;
+  border-top-width: 6px;
+}
+
+.formulaire 
+{
+  display: flex;
+  flex-flow: column;
+  font-size: 18px;
+  width: 100%;
+}
+
+
 
 }
 /*--------------------------------------------------FOOTER-----------------------------------------------*/
@@ -807,33 +861,3 @@ a {
   color: #ffffff;
 }
 
-/* ---------------------------------------MAP---------------------------------------- */
-.container_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.center {
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  transform: scale(1);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-  }
-
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
-
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-}
