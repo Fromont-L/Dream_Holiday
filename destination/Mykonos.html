@@ -24,26 +24,46 @@
       <div id="logocontainer">
         <div class="title">
           <a href="../index.html">
-          <img class="logo" src="../ASSETS/IMAGES/Navigation/logo.png" alt="LOGO" name="lOGO"title="DREAM HOLIDAY"/>
+            <img
+              class="logo"
+              src="../ASSETS/IMAGES/Navigation/logo.png"
+              alt="LOGO"
+              name="lOGO"
+              title="DREAM HOLIDAY"
+            />
           </a>
         </div>
         <div class="title dream">Dream Holiday</div>
       </div>
       <!---------------------------NAV--------------------------->
 
-
       <ul class="nav_link">
         <div class="items">
           <li>
-            <a href="#A_PROPOS"><img class="icon" src="../ASSETS/IMAGES/Navigation/personne.png" />A propos de nous</a>
+            <a href="#A_PROPOS"
+              ><img
+                class="icon"
+                src="../ASSETS/IMAGES/Navigation/personne.png"
+              />A propos de nous</a
+            >
           </li>
           <!--ANCRE POUR ATTEINDRE LA PARTIE "a propos de"-->
           <li>
-            <a href="../index.html#Nos-destinations" target="_blank"><img class="icon" src="../ASSETS/IMAGES/Navigation/avion.png" />Nos destinations</a>
+            <a href="../index.html#Nos-destinations" target="_blank"
+              ><img
+                class="icon"
+                src="../ASSETS/IMAGES/Navigation/avion.png"
+              />Nos destinations</a
+            >
           </li>
           <!--ANCRE POUR ATTEINDRE LA PARTIE "destinations"-->
           <li>
-            <a href="#CONTACT"><img class="icon" src="../ASSETS/IMAGES/Navigation/enveloppe.png"/>Nous contacter</a>
+            <a href="#CONTACT"
+              ><img
+                class="icon"
+                src="../ASSETS/IMAGES/Navigation/enveloppe.png"
+              />Nous contacter</a
+            >
           </li>
           <!--ANCRE POUR ATTEINDRE LA PARTIE "nous contacter"-->
         </div>
@@ -196,6 +216,28 @@
             ></iframe>
           </div>
         </div>
+
+        <a
+          class="weatherwidget-io"
+          href="https://forecast7.com/fr/37d4525d33/mikonos/"
+          data-label_1="MÝKONOS"
+          data-label_2="WEATHER"
+          data-font="Georgia"
+          data-theme="sky"
+          >MÝKONOS WEATHER</a
+        >
+        <script>
+          !(function (d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = 'https://weatherwidget.io/js/widget.min.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          })(document, 'script', 'weatherwidget-io-js');
+        </script>
       </div>
 
       <!-------------------------------------------------------------------FORMULAIRE------------------------------------------------------------->
@@ -406,7 +448,7 @@
             <fieldset class="arrivée">
               <legend>Tarif</legend>
               <p id="order"></p>
-              <input type="button" id="price" value="1450 €" />
+              <input type="button" id="price" value="290 €" />
             </fieldset>
           </fieldset>
           <!--fin formulaire flexi-->
@@ -426,7 +468,9 @@
       <h1 class="principal">DREAM HOLIDAY</h1>
       <div class="nav">
         <a href="default.asp" id="A_PROPOS">À propos de Nous</a>
-        <a href="mailto:dreamholidayscontact@gmail.com" id="CONTACT">Contact Us</a>
+        <a href="mailto:dreamholidayscontact@gmail.com" id="CONTACT"
+          >Contact Us</a
+        >
         <a href="CGU.docx">Mentions Légales </a>
       </div>
       <p class="footer">Copyright:TikiTakos2020</p>
@@ -434,4 +478,3 @@
   </body>
   <script src="ASSETS/JS/script.js"></script>
 </html>
-
