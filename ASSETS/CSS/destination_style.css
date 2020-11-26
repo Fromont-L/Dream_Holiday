@@ -482,3 +482,14 @@ p.footer {
 a {
   color: #ffffff;
 }
+
+/* ---------------------------------------MAP---------------------------------------- */
+.container_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
