@@ -95,14 +95,10 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
   display: none;
   cursor: pointer;
   margin-right: 15px;
+  font-size: 2em;
 }
 
-.burger div {
-  width: 30px;
-  height: 5px;
-  background-color: white;
-  margin: 8px;
-}
+
 
 /*-----------NAV REPONSIVE----------*/
 
@@ -140,6 +136,26 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
     font-size: 2em;
     top: -25px;
   }
+}
+
+@media only screen and (max-width:400px){
+  
+  .dream {
+    font-size: 1em;
+    top : -15px;
+  }
+
+  .logo {
+    width: 50px;
+    top : 100px;
+  }
+
+  .burger {
+    font-size: 2em;
+    width: 60px;
+  }
+
+
 }
 
 .nav-active {
@@ -457,6 +473,12 @@ p.text {
   .destination-box:last-child {
     margin-left: 0;
   }
+
+  .destination-title {
+    font-size: 2em;
+  }
+
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -474,7 +496,7 @@ p.text {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .button {
     width: 50px;
     height: 10px;
@@ -485,8 +507,8 @@ p.text {
     font-size: 5px;
   }
 
-  .destination-title {
-    font-size: 2em;
+  .destination-title:before {
+    display: none;
   }
 }
 
@@ -528,7 +550,7 @@ p.text {
 }
 
 .dream_holiday_contact {
-  font-family: Xanh Mono;
+  font-family: 'Xanh Mono';
   font-size: 28px;
 }
 
@@ -547,6 +569,35 @@ p.text {
 .mail a {
   font-family: georgia;
   color: black;
+}
+
+@media only screen and (max-width:450px){
+
+  .contact {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact_me {
+    font-family: georgia;
+    font-size: 0.8em;
+  }
+  
+  .dream_holiday_contact {
+    font-family: 'Xanh Mono';
+    font-size: 1em;
+  }
+  
+  .adresse {
+    font-family: georgia;
+    line-height: 25px;
+    font-size: 0.8em;
+  }
+
+  .mail a {
+    font-size: 0.8em;
+  }
+
 }
 
 /*--------------------------------------------------/CONTACT-----------------------------------------------*/
@@ -614,4 +665,30 @@ p.footer {
 
 footer a {
   color: #ffffff;
+}
+
+@media only screen and (max-width:500px){
+
+  .principal {
+    font-size: 1.5em;
+  }
+
+  .nav {
+    font-size: 1em;
+  }
+
+  P.footer{
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width:400px){
+
+  
+  .nav {
+    flex-direction: column;
+    font-size: 0.8em;
+    justify-content: space-around;
+    height: 10vh;
+  }
 }
