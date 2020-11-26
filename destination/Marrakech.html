@@ -188,135 +188,80 @@
         </div>
       </div>
 
-      
-
-      <!--MAP-->
-    <div class="container_center">
-      <div class="center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217406.37638548054!2d-8.1479381904096!3d31.63454497560447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1606385613847!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-    </div>
-    <!--/MAP-->
-
-<!-------------------------------------------------------------------FORMULAIRE------------------------------------------------------------->
+      <!--------FORMULAIRE-------------->
 
       <div class="formulaire">
-        <div class="description_title">Séjour</div>
-
+        <div class="description_title">Formulaire</div>
         <form method="post" action="">
           <fieldset class="flexi">
             <fieldset class="depart">
-
-              <!------------------------------------DEPART-------------------------------------->
-
-              <label for="depart">Depart</label>
+              <legend>Depart</legend>
 
               <select name="pays" id="paysSelect">
-                <option value="">--Choisissez votre aéroport</option>
-
+                <option value="">--Please choose your airport</option>
                 <option value="pays1">
                   Aéroport Paris Charles de Gaulle (France)
                 </option>
-
                 <option value="pays2">
                   L'aéroport de Francfort-sur-le-Main (Alemagne)
                 </option>
-
                 <option value="pays3">
                   Aéroport de Rome Fiumicino, Latium (Italie)
                 </option>
-
                 <option value="pays4">
                   Aéroport Adolfo-Suárez de Madrid-Barajas (Espagne)
                 </option>
-
                 <option value="pays5">
                   Aéroport International de Dubaï (Émirat Arabes Unis)
                 </option>
-
                 <option value="pays6">
                   Aéroport International de Los Angeles (États-Unis)
                 </option>
-
                 <option value="pays7">L'aéroport d’Istanbul (Turquie)</option>
-
                 <option value="pays8">
                   Aéroport International de Pékin-Capitale (Chine)
                 </option>
-
                 <option value="pays9">
                   Aéroport International de Londres-Heathrow (Royaume-Uni)
                 </option>
               </select>
+              <p><br /></p>
 
-              <!------------------------------------DONNÉES-------------------------------------->
+              <label for="nom">Nom:</label>
+              <input type="text" name="nom" id="" placeholder="Conor" />
 
-              <div class="donnees">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" id="" placeholder="Conor" />
-              </div>
+              <label for="prenom">Prenom:</label>
+              <input type="text" name="prenom" id="" placeholder="John" />
 
-              <div class="donnees">
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="" placeholder="John" />
-              </div>
+              <label for="mail">Email:</label>
+              <input
+                type="email"
+                name="mail"
+                id=""
+                placeholder="exemplemail@gmail.com"
+              />
 
-              <div class="donnees">
-                <label for="mail">E-mail</label>
-                <input
-                  type="email"
-                  name="mail"
-                  id=""
-                  placeholder="exemplemail@gmail.com"
-                />
-              </div>
-
-              <div class="donnees">
-                <label for="passager">Passager(s)</label>
-                <input
-                  type="number"
-                  name="passager"
-                  id=""
-                  placeholder="max 8"
-                  min="0"
-                  max="8"
-                />
-              </div>
-
-              <!------------------------------------LIGNE--------------------------------------->
-
-              <div class="ligne_formulaire"></div>
-
-              <!------------------------------------ DATE --------------------------------------------------- -->
-              <fieldset class="date">
-                <legend>Sélectionnez une date</legend>
-
-                <label for="depart_date">Allée</label>
-                <input type="date" name="departdate" />
-
-                <label for="retour_date">Retour</label>
-                <input type="date" name="retour" />
-              </fieldset>
-
-              <!------------------------------------LIGNE--------------------------------------->
-
-              <div class="ligne_formulaire"></div>
-
-              <!------------------------------------SIÈGES-------------------------------------->
+              <label for="passager">Passager(s)</label>
+              <input
+                type="number"
+                name="passager"
+                id=""
+                placeholder="max 8"
+                max="8"
+              />
 
               <fieldset class="seat">
-                <legend>Sélectionnez un siège</legend>
-                <div id="rut">
-                  <!-----------------HUBLOT------------------->
+                <legend>Selectionez un siege</legend>
 
+                <div id="rut">
                   <div class="bor">
-                    <label>Hublot</label>
+                    Hublot ?
+
                     <div>
                       <input
                         type="radio"
                         id="rd1"
-                        class="radio1"
-                        value=" avec hublot, "
+                        value=" Avec Hublot "
                         name="seat"
                         checked=""
                       />
@@ -327,25 +272,22 @@
                       <input
                         type="radio"
                         id="rd2"
-                        class="radio1"
-                        value=" sans hublot, "
+                        value=" Sans Hublot "
                         name="seat"
                       />
                       <label for="rd2">Non</label>
                     </div>
                   </div>
 
-                  <!-----------------CLASSE------------------->
-
                   <div class="bor">
-                    <label>Classe</label>
+                    Class ?
+
                     <div>
                       <input
                         type="radio"
                         id="rd3"
-                        class="radio2"
                         name="class"
-                        value=" en première classe, "
+                        value=" Premierre Classe "
                       />
                       <label for="rd3">Première classe</label>
                     </div>
@@ -354,25 +296,22 @@
                       <input
                         type="radio"
                         id="rd4"
-                        class="radio2"
                         name="class"
-                        value=" en classe économique, "
+                        value=" Class Economique "
                         checked
                       />
                       <label for="rd4">Classe Économique</label>
                     </div>
                   </div>
 
-                  <!-----------------REPAS------------------->
-
                   <div class="bor">
-                    <label>Repas</label>
+                    Repas ?
+
                     <div>
                       <input
                         type="radio"
                         id="rd5"
-                        class="radio3"
-                        value=" avec repas. "
+                        value=" Avec Repas "
                         name="repas"
                         checked=""
                       />
@@ -383,8 +322,7 @@
                       <input
                         type="radio"
                         id="rd6"
-                        class="radio3"
-                        value=" sans repas. "
+                        value=" Sans Repas "
                         name="repas"
                       />
                       <label for="rd6">Sans Repas</label>
@@ -392,34 +330,38 @@
                   </div>
                 </div>
 
-                <input type="button" onclick="myFunction()" value="Valider" />
+                <input
+                  type="button"
+                  onclick="myFunction()"
+                  value="Valider les options"
+                />
+
+                <!-- STOP -->
               </fieldset>
-              <!--fin seat-->
             </fieldset>
-            <!--fin arrivée-->
 
-            <!------------------------------------LIGNE--------------------------------------->
-
-            <div class="ligne_formulaire"></div>
-
-            <!------------------------------------TARIF-------------------------------------->
-
-            <fieldset class="arrivée">
+            <fieldset class="arriver">
               <legend>Tarif</legend>
+
               <p id="order"></p>
-              <input type="button" id="price" value="1450 €" />
+
+              <div id="price">1450 €</div>
             </fieldset>
           </fieldset>
-          <!--fin formulaire flexi-->
         </form>
       </div>
-      <!--fin formulaire-->
     </div>
-    <!--fin description-->
-
-    <!------------------------------------------------------------------- /FORMULAIRE---------------------------------------------------------->
 
     <!--------------------------------------------------------------------/DESCRIPTION--------------------------------------------------------->
+
+    <!--MAP-->
+    <div class="container_center">
+      <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217406.37638548054!2d-8.1479381904096!3d31.63454497560447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1606385613847!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    <!--/MAP-->
+
 
     <!---------------------------------------------------------------------FOOTER-------------------------------------------------------------->
 
@@ -428,7 +370,7 @@
       <div class="nav">
         <a href="default.asp">À propos de Nous</a>
         <a href="mailto:dreamholidayscontact@gmail.com">Contact Us</a>
-        <a href="Projet_Dream_Holiday.pdf">Mentions Légales</a>
+        <a href="CGU.docx">Mentions Légales </a>
       </div>
       <p class="footer">Copyright:TikiTakos2020</p>
     </footer>
