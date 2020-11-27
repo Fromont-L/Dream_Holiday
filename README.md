@@ -37,12 +37,12 @@ _______________________________________________________________________
 
 Auteurs :
 
-Sandra GUILLEMIN : Cliente et guide
-Anissa FABRE : Design et développement
-Aurore MALOCHET : Administratif et développement
-Corentin BOUSQUET : Design et développement
-Mikaïl KALKAN : Fonctionnalités et développement
-Lucas FROMONT : Scrum master du projet
+- Sandra GUILLEMIN : Cliente et guide
+- Anissa FABRE : Design et développement
+- Aurore MALOCHET : Administratif et développement
+- Corentin BOUSQUET : Design et développement
+- Mikaïl KALKAN : Fonctionnalités et développement
+- Lucas FROMONT : Scrum master du projet
 
 _______________________________________________________________________
 
