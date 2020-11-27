@@ -431,6 +431,13 @@ main {
   animation-play-state: paused;
 }
 
+@media screen and (max-width: 640px) {
+  .center {
+    width: 80%;
+    height: 40%;
+    overflow: hidden;
+  }
+}
 /* -----------------------------------------------METEO---------------------------------------------- */
 
 .weatherwidget-io {
