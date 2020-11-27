@@ -129,7 +129,49 @@ function startTimer() {
 }
 
 //------------------------------------------- FORMULAIRE ---------------------------------------------
+
 function myFunction() {
+  const initPrixNum = parseInt(document.getElementById('price').value);
+
+  var chekedRepas = document.getElementById('rd5').checked;
+  var chekedClass = document.getElementById('rd3').checked;
+  var chekedHublot = document.getElementById('rd1').checked;
+
+  switch (chekedRepas) {
+    case true:
+      var repas = 30;
+      break;
+    case false:
+      repas = 0;
+      break;
+    default:
+      repas = 0;
+  }
+
+  switch (chekedClass) {
+    case true:
+      var premiereClass = 130;
+      break;
+    case false:
+      premiereClass = 0;
+      break;
+    default:
+      premiereClass = 0;
+  }
+
+  switch (chekedHublot) {
+    case true:
+      var hublot = 5;
+      break;
+    case false:
+      hublot = 0;
+      break;
+    default:
+      hublot = 0;
+  }
+
+  var prixNum = parseInt(document.getElementById('price').value);
+
   var price = document.forms[0];
   var txt = '';
   var i;
@@ -141,5 +183,6 @@ function myFunction() {
   document.getElementById('order').innerText =
     'Vous avez sélectionnez un vol: ' + txt;
 
-  document.getElementById('price').innerHTML = 'Prix: <strong></strong>' + some;
+  document.getElementById('price').value =
+    prixNum + (hublot + repas + premiereClass);
 }
