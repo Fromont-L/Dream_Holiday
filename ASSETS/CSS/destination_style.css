@@ -388,6 +388,10 @@ main {
   font-weight: 100;
 }
 
+.cancun-information li {
+  margin-top: 10px;
+}
+
 /* ---------------------------------------MAP----------------------------------------*/
 
 .container_center {
