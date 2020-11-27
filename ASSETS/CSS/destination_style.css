@@ -23,6 +23,7 @@
 html {
   -webkit-font-smoothing: antialiased;
   background-color: #f4f3f4;
+  scroll-behavior: smooth;
 }
 
 /*--------------------------------------------BODY---------------------------------------------*/
