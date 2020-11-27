@@ -324,6 +324,9 @@ main {
   .caption > h2 {
     font-size: 2em;
   }
+  .diapo_titre {
+    font-size: 2.5em;
+  }
 }
 
 @media (max-width: 400px) {
@@ -333,6 +336,13 @@ main {
   .caption > h2 {
     font-size: 1.4em;
   }
+  .diapo_titre {
+    font-size: 2em;
+  }
+  #nav-droite,
+#nav-gauche{
+  font-size: 2em;
+}
 }
 
 /*---------------------------------------/DIAPO-----------------------------------------*/
@@ -392,6 +402,25 @@ main {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 800px){
+
+  .description_title{
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 400px){
+
+  .description_title{
+    font-size: 2em;
+  }
+
+  .cancun-information-title{
+    font-size: 1.5em;
+  }
+}
+
+
 /* ---------------------------------------MAP----------------------------------------*/
 
 .container_center {
@@ -406,6 +435,7 @@ main {
   transform: scale(1);
   animation: pulse 2s infinite;
 }
+
 
 @keyframes pulse {
   0% {
