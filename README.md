@@ -1,5 +1,5 @@
 # Dream_Holiday
-Projet Escale en groupe (avec Anissa FABRE, Aurore MALOCHET, Corentin BOUSQUET, Mikaîl KALKAN, Lucas FROMONT)
+Projet Escale en groupe (avec Anissa FABRE, Aurore MALOCHET, Corentin BOUSQUET, Mikaïl KALKAN, Lucas FROMONT)
 
 Dream Holiday
 Voyager n'a jamais été aussi simple
