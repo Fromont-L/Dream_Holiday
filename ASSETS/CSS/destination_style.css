@@ -134,7 +134,7 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    opacity: 0;
+    display: none;
     transition: all 0.5s ease-out;
     z-index: 1000;
     margin-right: 2%;
@@ -168,7 +168,8 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
 
 .nav-active {
   transform: translate(0%);
-  opacity: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes navLinkFade {
