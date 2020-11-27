@@ -184,5 +184,5 @@ function myFunction() {
     'Vous avez sélectionnez un vol: ' + txt;
 
   document.getElementById('price').value =
-    prixNum + (hublot + repas + premiereClass);
+    prixNum + (hublot + repas + premiereClass) + '€';
 }
