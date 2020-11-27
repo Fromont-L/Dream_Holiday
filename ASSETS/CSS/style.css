@@ -98,13 +98,12 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
   font-size: 2em;
 }
 
-
-
 /*-----------NAV REPONSIVE----------*/
 
 @media screen and (max-width: 1024px) {
   .items {
     width: 60%;
+    margin-right: 2%;
   }
 }
 
@@ -126,6 +125,7 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
     display: none;
     transition: all 0.5s ease-out;
     z-index: 1000;
+    margin-right: 2%;
   }
 
   .burger {
@@ -138,23 +138,20 @@ nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
   }
 }
 
-@media only screen and (max-width:400px){
-  
+@media only screen and (max-width: 400px) {
   .dream {
     font-size: 1em;
-    top : -15px;
+    top: -15px;
   }
 
   .logo {
     width: 50px;
-    top : 100px;
+    top: 100px;
   }
 
   .burger {
     font-size: 2em;
   }
-
-
 }
 
 .nav-active {
